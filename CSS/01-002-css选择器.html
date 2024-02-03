@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>选择器</title>
+    <style>
+        /* 选中同名标签设置相同的样式，无法差异化同名标签的样式 */
+        p {
+            color:red;
+        }
+        .green {
+            color: green;
+        }
+        .size {
+            font-size: 50px;
+        }
+        #red {
+            color: red;
+        }
+        * {
+            color: blue;
+        }
+    </style>
+    
+</head>
+<body>
+    <p>这是p标签</p>
+    <hr>
+    <!-- 绿色  类选择器优先于标签选择器 -->
+    <p class="green">1111</p>
+    <div class="green size">div标签</div>
+    <hr>
+    <!-- id选择器优先于 class选择器 -->
+    <div id="red"  class="green">这是div标签，用来测试id选择器</div>
+    <hr>
+    <!-- 标签选择器由于通配符选择器 -->
+    <p> p 标签</p>
+    <strong> strong 标签</strong>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+</body>
+</html>
