@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>后代选择器</title>
+    <style>
+        span {
+            color: red;
+        }
+        /* 后代选择器 */
+        div span {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <span> span 标签 </span>
+    <div>
+        <span> 这是 div 里头 span 标签</span>
+        <p>
+            <span> 这是 div中 p标签 里头的的span标签 </span>
+        </p>
+    </div>
+</body>
+</html>
